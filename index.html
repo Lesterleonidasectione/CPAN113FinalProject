@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Global Recipe Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Global Recipe Book</h1>
+
+  <section class="controls">
+    <label for="continentSelect"><strong>Filter by continent:</strong></label>
+    <select id="continentSelect">
+      <option value="All">All</option>
+      <option value="Africa">Africa</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="North America">North America</option>
+      <option value="South America">South America</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+
+    <label for="searchInput"><strong>Search recipe:</strong></label>
+    <input id="searchInput" type="text" placeholder="Type recipe name..." />
+  </section>
+
+  <main class="layout">
+    <section class="recipe-list">
+      <h2>Recipes</h2>
+      <ul id="recipeList"></ul>
+    </section>
+
+    <section class="recipe-details">
+      <h2>Details</h2>
+      <div id="recipeDetails">
+        <p>Select a recipe to see details.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
