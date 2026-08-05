@@ -1,11 +1,19 @@
+// ===============================
+// ELEMENTS
+// ===============================
 const continentSelect = document.getElementById("continentSelect");
 const searchInput = document.getElementById("searchInput");
 const recipeListEl = document.getElementById("recipeList");
 const recipeDetailsEl = document.getElementById("recipeDetails");
+const savedListEl = document.getElementById("savedList");
 
 // Start off with the full list of recipes
-let filteredRecipes = recipes.slice(); 
+let filteredRecipes = recipes.slice();
 
+
+// ===============================
+// RENDER RECIPE LIST
+// ===============================
 function renderRecipeList(list) {
   recipeListEl.innerHTML = "";
 
@@ -22,6 +30,10 @@ function renderRecipeList(list) {
   });
 }
 
+
+// ===============================
+// SHOW RECIPE DETAILS
+// ===============================
 function showRecipeDetails(recipe) {
   recipeDetailsEl.innerHTML = `
     <h3>${recipe.name}</h3>
@@ -38,9 +50,15 @@ function showRecipeDetails(recipe) {
     <ol>
       ${recipe.steps.map(s => `<li>${s}</li>`).join("")}
     </ol>
+
+    <button onclick="saveRecipe(${recipe.id})">Save to Favourites</button>
   `;
 }
 
+
+// ===============================
+// FILTERS
+// ===============================
 function applyFilters() {
   const continent = continentSelect.value;
   const searchTerm = searchInput.value.toLowerCase();
@@ -56,9 +74,53 @@ function applyFilters() {
   renderRecipeList(filteredRecipes);
 }
 
-// Event listeners
+
+// ===============================
+// SAVE RECIPE
+// ===============================
+function saveRecipe(id) {
+  let saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+
+  if (!saved.includes(id)) {
+    saved.push(id);
+    localStorage.setItem("savedRecipes", JSON.stringify(saved));
+    alert("Recipe saved!");
+  } else {
+    alert("Already saved.");
+  }
+
+  renderSavedRecipes();
+}
+
+
+// ===============================
+// RENDER SAVED RECIPES
+// ===============================
+function renderSavedRecipes() {
+  const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  savedListEl.innerHTML = "";
+
+  saved.forEach(id => {
+    const recipe = recipes.find(r => r.id === id);
+    if (!recipe) return;
+
+    const li = document.createElement("li");
+    li.textContent = recipe.name;
+    li.addEventListener("click", () => showRecipeDetails(recipe));
+    savedListEl.appendChild(li);
+  });
+}
+
+
+// ===============================
+// EVENT LISTENERS
+// ===============================
 continentSelect.addEventListener("change", applyFilters);
 searchInput.addEventListener("input", applyFilters);
 
-// Initial render
+
+// ===============================
+// INITIAL RENDER
+// ===============================
 renderRecipeList(filteredRecipes);
+renderSavedRecipes();
