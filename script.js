@@ -50,8 +50,8 @@ function showRecipeDetails(recipe) {
     <ol>
       ${recipe.steps.map(s => `<li>${s}</li>`).join("")}
     </ol>
-
     <button onclick="saveRecipe(${recipe.id})">Save to Favourites</button>
+    <button onclick="removeRecipe(${recipe.id})">Unsave Recipe</button>
     <button onclick="downloadRecipe(${recipe.id})">Download Recipe</button>
   `;
 }
