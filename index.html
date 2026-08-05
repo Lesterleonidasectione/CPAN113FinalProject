@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Interactive Recipe</title>
+  <title>It's A Small World Recipe</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <h1>It's A Small World Recipe</h1>
 
+<body>
+  <h1>Global Recipe Book</h1>
+
+  <!-- FILTERS + SEARCH -->
   <section class="controls">
     <label for="continentSelect"><strong>Filter by continent:</strong></label>
     <select id="continentSelect">
@@ -24,20 +26,32 @@
     <input id="searchInput" type="text" placeholder="Type recipe name..." />
   </section>
 
+  <!-- MAIN LAYOUT -->
   <main class="layout">
+
+    <!-- RECIPE LIST -->
     <section class="recipe-list">
       <h2>Recipes</h2>
       <ul id="recipeList"></ul>
     </section>
 
+    <!-- RECIPE DETAILS -->
     <section class="recipe-details">
       <h2>Details</h2>
       <div id="recipeDetails">
         <p>Select a recipe to see details.</p>
       </div>
     </section>
+
+    <!-- SAVED RECIPES -->
+    <section class="saved-recipes">
+      <h2>Saved Recipes</h2>
+      <ul id="savedList"></ul>
+    </section>
+
   </main>
 
+  <!-- SCRIPTS -->
   <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
