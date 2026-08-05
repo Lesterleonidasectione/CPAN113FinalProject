@@ -50,6 +50,7 @@ function showRecipeDetails(recipe) {
     <ol>
       ${recipe.steps.map(s => `<li>${s}</li>`).join("")}
     </ol>
+
     <button onclick="saveRecipe(${recipe.id})">Save to Favourites</button>
     <button onclick="removeRecipe(${recipe.id})">Unsave Recipe</button>
     <button onclick="downloadRecipe(${recipe.id})">Download Recipe</button>
@@ -91,6 +92,24 @@ function saveRecipe(id) {
   }
 
   renderSavedRecipes();
+}
+
+
+// ===============================
+// UNSAVE RECIPE (REMOVE FROM FAVOURITES)
+// ===============================
+function removeRecipe(id) {
+  let saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+
+  // Remove only from favourites
+  saved = saved.filter(savedId => savedId !== id);
+
+  localStorage.setItem("savedRecipes", JSON.stringify(saved));
+
+  // Refresh saved list UI
+  renderSavedRecipes();
+
+  alert("Removed from favourites.");
 }
 
 
