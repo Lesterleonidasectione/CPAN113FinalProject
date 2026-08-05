@@ -5,10 +5,8 @@
   <title>It's A Small World Recipe</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <h1>Global Recipe Book</h1>
-
   <!-- FILTERS + SEARCH -->
   <section class="controls">
     <label for="continentSelect"><strong>Filter by continent:</strong></label>
@@ -21,20 +19,16 @@
       <option value="South America">South America</option>
       <option value="Oceania">Oceania</option>
     </select>
-
     <label for="searchInput"><strong>Search recipe:</strong></label>
     <input id="searchInput" type="text" placeholder="Type recipe name..." />
   </section>
-
   <!-- MAIN LAYOUT -->
   <main class="layout">
-
     <!-- RECIPE LIST -->
     <section class="recipe-list">
       <h2>Recipes</h2>
       <ul id="recipeList"></ul>
     </section>
-
     <!-- RECIPE DETAILS -->
     <section class="recipe-details">
       <h2>Details</h2>
@@ -42,15 +36,12 @@
         <p>Select a recipe to see details.</p>
       </div>
     </section>
-
     <!-- SAVED RECIPES -->
     <section class="saved-recipes">
       <h2>Saved Recipes</h2>
       <ul id="savedList"></ul>
     </section>
-
   </main>
-
   <!-- SCRIPTS -->
   <script src="data.js"></script>
   <script src="script.js"></script>
