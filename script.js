@@ -52,6 +52,7 @@ function showRecipeDetails(recipe) {
     </ol>
 
     <button onclick="saveRecipe(${recipe.id})">Save to Favourites</button>
+    <button onclick="downloadRecipe(${recipe.id})">Download Recipe</button>
   `;
 }
 
@@ -109,6 +110,39 @@ function renderSavedRecipes() {
     li.addEventListener("click", () => showRecipeDetails(recipe));
     savedListEl.appendChild(li);
   });
+}
+
+
+// ===============================
+// DOWNLOAD RECIPE
+// ===============================
+function downloadRecipe(id) {
+  const recipe = recipes.find(r => r.id === id);
+
+  const content = `
+${recipe.name}
+-------------------------
+
+Continent: ${recipe.continent}
+Country: ${recipe.country}
+Type: ${recipe.type}
+
+Ingredients:
+${recipe.ingredients.map(i => "- " + i).join("\n")}
+
+Steps:
+${recipe.steps.map((s, index) => (index + 1) + ". " + s).join("\n")}
+`;
+
+  const blob = new Blob([content], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${recipe.name.replace(/\s+/g, "_")}.txt`;
+  a.click();
+
+  URL.revokeObjectURL(url);
 }
 
 
