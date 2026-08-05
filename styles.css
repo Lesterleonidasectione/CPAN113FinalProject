@@ -71,3 +71,10 @@ h1 {
 #recipeList li:hover {
   background: rgba(223, 227, 230, 0.9);
 }
+
+.saved-recipes,
+.saved-recipes h2,
+#savedList,
+#savedList li {
+  color: #ffffff;
+}
