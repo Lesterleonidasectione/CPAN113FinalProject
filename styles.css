@@ -78,3 +78,13 @@ h1 {
 #savedList li {
   color: #ffffff;
 }
+
+#savedList li {
+  padding: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+#savedList li:hover {
+  background: rgba(255,255,255,0.15);
+  cursor: pointer;
+}
