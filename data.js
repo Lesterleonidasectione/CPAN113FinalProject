@@ -135,4 +135,244 @@ const recipes = [
       "Let set on a wire rack before serving."
     ]
   }
+
+  {
+    id: 7,
+    name: "Chicken and Dumplings",
+    continent: "North America",
+    country: "US",
+    type: "Main",
+    ingredients: [
+	"2 (10.5 ounce) cans condensed cream of chicken soup",
+	"3 (14 ounce) cans chicken broth",
+	"3 cups shredded cooked chicken meat",
+	"2 (10 ounce) cans refrigerated biscuit dough"
+    ],
+    steps: [
+	"Gather all ingredients.",
+	"Stir condensed soup, chicken broth, and shredded chicken together",
+	"in a large saucepan over medium-high heat until it begins to simmer.",
+	"Cut each biscuit into quarters, and gently stir into the simmering soup.",
+	"Reduce heat to medium-low, cover, and simmer until biscuits are no longer doughy in the center,",
+	"10 to 15 minutes. Serve and enjoy!"
+    ]
+  }
+
+
+{
+    id: 8,
+    name: "Guacamole",
+    continent: "South America",
+    country: "Mexico",
+    type: "Dipping",
+    ingredients: [
+	"2 ripe avocados, peeled and pitted",
+	"1 small onion, finely chopped",
+	"1 ripe tomato, chopped",
+	"1 clove garlic, minced",
+	"1 lime, juiced",
+	"salt and pepper to taste"
+    ],
+    steps: [	
+	"Gather all ingredients.",
+	"Mash avocado in a medium serving bowl.",
+	"Stir in onion, tomato, and garlic.",
+	"Season with lime juice and salt and pepper to taste.",
+	"Cover and chill guacamole for 30 minutes to allow flavors to blend." 
+    ]
+  }
+
+
+{
+    id: 9,
+    name: "Chicken Curry",
+    continent: "Asia",
+    country: "India",
+    type: "Main",
+    ingredients: [
+	"¼ cup olive oil",
+	"2 large onions, diced",
+	"⅓ cup curry powder, or to taste",
+	"6 skinless, boneless chicken breast halves - cut into strips"
+    ],
+    steps: [	
+	"Gather the ingredients.",
+	"Heat oil in a large skillet over medium heat until hot.", 
+	"Add onion and sauté until soft and golden brown, 5 to 8 minutes.",
+	"Slowly stir in curry powder until well blended.",
+	"Add chicken; reduce the heat to low, cover,", 
+	"and cook until chicken is no longer pink in the center and the juices run clear,", 
+	"20 to 40 minutes. An instant-read thermometer inserted",
+	"into the center should read at least 165 degrees F (74 degrees C).",
+	"Uncover and cook, stirring constantly to prevent burning,",
+	"until pan juices reduce to desired amount, 3 to 5 minutes."
+    ]
+  }
+
+
+{
+    id: 10,
+    name: "Sour Cream Cheesecake",
+    continent: "North America",
+    country: "US",
+    type: "Dessert",
+    ingredients: [
+	"1 (9 inch) prepared shortbread pie crust",
+	"2 (8 ounce) packages cream cheese",
+	"1 cup white sugar",
+	"2 large eggs",
+	"1 cup sour cream",
+	"2 teaspoons vanilla extract"
+    ],
+    steps: [	
+	"Gather all ingredients.",
+	"Preheat the oven to 325 degrees F (165 degrees C). Place pie crust in a pan.",
+	"Cream cheese and sugar creamed together.",
+	"Add eggs one at a time, blending well.",
+	"Add sour cream and vanilla.",
+	"Pour into prepared crust in the pan.",
+	"Mixture poured into prepared crust.",
+	"Bake in the preheated oven until the cake is set and",
+	"jiggles evenly across the top when lightly shaken, 60 to 70 minutes.",
+	"Run a knife around the outside edge but leave the cake in the pan.", 
+	"Let cool on the counter, then place in refrigerator.", 
+	"Remove from pan when completely chilled, and serve." 
+    ]
+  }
+
+
+{
+    id: 11,
+    name: "Grilled Teriyaki Chicken",
+    continent: "Asia",
+    country: "Japan",
+    type: "Main",
+    ingredients: [
+	"1 cup teriyaki sauce",
+	"¼ cup lemon juice",
+	"2 teaspoons finely minced fresh garlic",
+	"2 teaspoons sesame oil",
+	"4 skinless, boneless chicken breast halves"
+    ],
+    steps: [
+	"Gather all ingredients.",
+	"Whisk teriyaki sauce, lemon juice, garlic, and sesame oil together in a bowl",
+	"Pour marinade into a resealable plastic bag. Add chicken,", 
+	"coat with marinade, squeeze out excess air, and seal the bag.", 
+	"Marinate in the refrigerator for at least 1 hour to overnight, turning every so often.",
+	"When ready to cook, preheat an outdoor grill for high heat and lightly oil the grate.", 
+	"Remove chicken from marinade and shake off excess. Discard any remaining marinade.",
+	"Cook chicken breasts on the preheated grill until no longer pink in the center and the juices run clear,", 
+	"6 to 8 minutes per side. An instant-read thermometer inserted",
+	"into the center should read at least 165 degrees F (74 degrees C)."
+    ]
+  }
+
+
+{
+    id: 12,
+    name: "Easy Pancakes",
+    continent: "North America",
+    country: "US",
+    type: "Breakfast",
+    ingredients: [
+	"1 cup all-purpose flour",
+	"2 tablespoons white sugar",
+	"2 teaspoons baking powder",
+	"½ teaspoon salt, or to taste",
+	"1 cup milk",
+	"2 tablespoons vegetable oil",
+	"1 large egg, beaten"
+    ],
+    steps: [
+	"Gather the ingredients.",
+	"Combine flour, sugar, baking powder, and salt in a large bowl;", 
+	"make a well in the center. Pour in milk, oil, and egg; mix until smooth.",
+	"Heat a lightly oiled griddle or frying pan over medium-high heat.", 
+	"Pour or scoop about ¼ cup batter per pancake onto the griddle;", 
+	"cook until bubbles form and the edges are dry, 1 to 2 minutes. Flip;", 
+	"cook until browned on the other side. Repeat with remaining batter." 
+    ]
+  }
+
+
+{
+    id: 13,
+    name: "Chinese Corn Soup",
+    continent: "Asia",
+    country: "China",
+    type: "Soup",
+    ingredients: [
+	"1 (15 ounce) can cream style corn",
+	"1 (14.5 ounce) can low-sodium chicken broth",
+	"1 tablespoon cornstarch",
+	"2 tablespoons water",
+	"1 large egg, beaten"
+    ],
+    steps: [
+	"Combine corn and chicken broth in a saucepan. Bring to a boil over medium-high heat.",
+	"Mix together cornstarch and water in a small bowl or cup;",
+	"pour into the boiling corn soup, and continue cooking for about 2 minutes, or until thickened.",
+	"Gradually add beaten egg while stirring the soup. Remove from heat and serve." 
+    ]
+  }
+
+
+{
+    id: 14,
+    name: "Chinese Corn Soup",
+    continent: "Asia",
+    country: "China",
+    type: "Soup",
+    ingredients: [
+	"1 (15 ounce) can cream style corn",
+	"1 (14.5 ounce) can low-sodium chicken broth",
+	"1 tablespoon cornstarch",
+	"2 tablespoons water",
+	"1 large egg, beaten"
+    ],
+    steps: [
+	"Combine corn and chicken broth in a saucepan. Bring to a boil over medium-high heat.",
+	"Mix together cornstarch and water in a small bowl or cup;",
+	"pour into the boiling corn soup, and continue cooking for about 2 minutes, or until thickened.",
+	"Gradually add beaten egg while stirring the soup. Remove from heat and serve." 
+    ]
+  }
+
+{
+    id: 15,
+    name: "Jerk Chicken",
+    continent: "Central America",
+    country: "Jamaica",
+    type: "Main",
+    ingredients: [
+	"6 green onions, chopped",
+	"1 onion, chopped",
+	"1 jalapeño, habanero, or Scotch bonnet chile, minced",
+	"¾ cup soy sauce or to taste",
+	"½ cup distilled white vinegar",
+	"¼ cup vegetable oil",
+	"2 tablespoons brown sugar",
+	"1 tablespoon chopped fresh thyme",
+	"½ teaspoon ground cloves",
+	"½ teaspoon ground nutmeg",
+	"½ teaspoon ground allspice",
+	"1 ½ pounds skinless, boneless chicken breast halves",
+	"lime wedges for garnish"
+    ],
+    steps: [
+	"Gather all ingredients.",
+	"Combine green onions, onion, chile pepper, soy sauce, vinegar, vegetable oil,",
+	"brown sugar, thyme, cloves, nutmeg, and allspice in a food processor", 
+	"or blender; process for about 15 seconds.",
+	"Place the chicken in a medium bowl, and coat with the marinade.", 
+	"Cover and refrigerate for 4 to 6 hours, or overnight.",
+	"Preheat grill for high heat. Lightly oil grill grate.", 
+	"Cook chicken breasts on the prepared grill until no longer pink in the center", 
+	"and the juices run clear, about 8 to 10 minutes. An instant-read thermometer inserted",
+	"into the center should read at least 165 degrees F (74 degrees C).",
+	"Transfer chicken to a platter and serve with lime wedges." 
+    ]
+  }
+  
 ];
