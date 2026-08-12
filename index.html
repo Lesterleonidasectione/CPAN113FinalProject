@@ -49,7 +49,9 @@
   <audio id="bgMusic" loop>
     <source src="assets/its_a_small_world.mp3" type="audio/mpeg">
   </audio>
+
   <script>
+    // Guaranteed fix: browsers allow audio only after user interaction
     document.addEventListener("click", () => {
       const bgMusic = document.getElementById("bgMusic");
       bgMusic.play().catch(() => {});
