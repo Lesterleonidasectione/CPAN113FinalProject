@@ -46,6 +46,8 @@ function showRecipeDetails(recipe) {
       ${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}
     </ul>
 
+    <img src="images/${recipe.id}.jpg" width="300px" height="250px">
+
     <h4>Steps</h4>
     <ol>
       ${recipe.steps.map(s => `<li>${s}</li>`).join("")}
