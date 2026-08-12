@@ -27,7 +27,7 @@
 
     <!-- MUSIC TOGGLE BUTTON -->
     <button id="musicToggleBtn" type="button" style="margin-left: 10px; cursor: pointer;">
-      🎵 Play Music
+      Play Music
     </button>
   </section>
 
@@ -54,8 +54,10 @@
     </section>
   </main>
 
-  <!-- BACKGROUND MUSIC -->
-  <audio id="bgMusic" src="assets/its_a_small_world.mp3" loop preload="auto"></audio>
+ <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="/CPAN113FinalProject/assets/its_a_small_world.mp3" type="audio/mpeg">
+  </audio>
 
   <!-- SCRIPTS -->
   <script src="data.js"></script>
@@ -72,12 +74,13 @@
       if (!isPlaying) {
         try {
           isPlaying = true;
+          bgMusic.load(); // Forces reload of source
           await bgMusic.play();
           musicBtn.textContent = "Pause Music";
         } catch (err) {
           isPlaying = false;
           console.error("Playback error details:", err);
-          alert("Could not load audio. Ensure assets/its_a_small_world.mp3 exists in your repository.");
+          alert("Audio error: " + err.message);
         }
       } else {
         bgMusic.pause();
