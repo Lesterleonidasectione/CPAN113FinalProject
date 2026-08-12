@@ -61,9 +61,12 @@
   <script>
     document.addEventListener("click", () => {
       const bgMusic = document.getElementById("bgMusic");
-      bgMusic.play().catch(() => {});
+      if (bgMusic.paused) {
+        bgMusic.play()
+          .then(() => console.log("Audio playing!"))
+          .catch((err) => console.error("Playback blocked or failed:", err));
+      }
     });
   </script>
-
 </body>
 </html>
