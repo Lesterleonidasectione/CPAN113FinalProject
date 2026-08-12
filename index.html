@@ -46,8 +46,14 @@
   <script src="data.js"></script>
   <script src="script.js"></script>
   <!-- BACKGROUND MUSIC -->
-  <audio autoplay loop>
-    <source src="assets/background.mp3" type="audio/mpeg">
+  <audio id="bgMusic" autoplay loop muted>
+    <source src="assets/It’s a Small World.mp3" type="audio/mpeg">
   </audio>
+  <script>
+    const bgMusic = document.getElementById("bgMusic");
+    setTimeout(() => {
+      bgMusic.muted = false;
+    }, 500);
+  </script>
 </body>
 </html>
