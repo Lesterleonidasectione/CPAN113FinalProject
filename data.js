@@ -20,7 +20,6 @@ const recipes = [
       "Season with black pepper and serve."
     ]
   },
-
   {
     id: 2,
     name: "Chicken Adobo",
