@@ -9,7 +9,7 @@
 <body>
   <h1>It's A Small World Recipe</h1>
 
-  <!-- FILTERS + SEARCH + AUDIO CONTROL -->
+  <!-- FILTERS + SEARCH -->
   <section class="controls">
     <label for="continentSelect"><strong>Filter by continent:</strong></label>
     <select id="continentSelect">
@@ -25,7 +25,6 @@
     <label for="searchInput"><strong>Search recipe:</strong></label>
     <input id="searchInput" type="text" placeholder="Type recipe name..." />
 
-    <!-- MUSIC TOGGLE BUTTON -->
     <button id="musicToggleBtn" type="button" style="margin-left: 10px; cursor: pointer;">
       Play Music
     </button>
@@ -54,37 +53,34 @@
     </section>
   </main>
 
- <!-- BACKGROUND MUSIC -->
-  <audio id="bgMusic" loop preload="auto">
-    <source src="/CPAN113FinalProject/assets/its_a_small_world.mp3" type="audio/mpeg">
-  </audio>
-
   <!-- SCRIPTS -->
   <script src="data.js"></script>
   <script src="script.js"></script>
 
-  <!-- AUDIO PLAYBACK SCRIPT -->
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/its_a_small_world.mp3" type="audio/mpeg">
+  </audio>
+
   <script>
     const musicBtn = document.getElementById("musicToggleBtn");
     const bgMusic = document.getElementById("bgMusic");
 
-    let isPlaying = false;
-
     musicBtn.addEventListener("click", async () => {
-      if (!isPlaying) {
+      if (bgMusic.paused) {
         try {
-          isPlaying = true;
-          bgMusic.load(); // Forces reload of source
+          musicBtn.disabled = true;
           await bgMusic.play();
           musicBtn.textContent = "Pause Music";
         } catch (err) {
-          isPlaying = false;
-          console.error("Playback error details:", err);
-          alert("Audio error: " + err.message);
+          if (err.name !== "AbortError") {
+            console.error("Playback error:", err);
+          }
+        } finally {
+          musicBtn.disabled = false;
         }
       } else {
         bgMusic.pause();
-        isPlaying = false;
         musicBtn.textContent = "Play Music";
       }
     });
