@@ -3,7 +3,7 @@
 ## Overview
 **It’s A Small World Recipe** is an interactive web application that allows users to explore recipes from different continents, view detailed instructions, save favourites, and download recipes as text files. This project was developed collaboratively for CPAN113 to demonstrate front‑end development skills, teamwork, and proper GitHub workflow.
 
-The website provides a user‑friendly interface with continent filtering, search functionality, recipe images, and a favourites system powered by JavaScript and `localStorage`.
+The website provides a user‑friendly interface with continent filtering, search functionality, recipe images, and a favourites system powered by JavaScript and `localStorage`. We are creating an interactive web page for recipes covering cuisine around the world. The recipes database is being sorted by the continent of origin to help users to narrow down the search. The search bar function is also provided; users can type in keywords to search for the recipe they are looking for. Moreover, we created the save and unsave function so that the users can bookmark the recipes they like and revisit it later. In addition, we also provide the download function for the users if they prefer to download and save the recipes on they own devices.
 
 ---
 
