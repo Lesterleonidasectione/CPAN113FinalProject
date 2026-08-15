@@ -62,6 +62,8 @@ Video 1- demo.mp4
 Video 2- presentation.mp4
 [group presentation of this Project]
 
+---
+
 How to Run the Project
 No installation required.
 1.	Clone the repository:
