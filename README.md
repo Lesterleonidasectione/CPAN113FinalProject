@@ -1,105 +1,112 @@
-# **It’s A Small World Recipe**
-
-## Overview
-**It’s A Small World Recipe** is an interactive web application that allows users to explore recipes from different continents, view detailed instructions, save favourites, and download recipes as text files. This project was developed collaboratively for CPAN113 to demonstrate front‑end development skills, teamwork, and proper GitHub workflow.
-
-The website provides a user‑friendly interface with continent filtering, search functionality, recipe images, and a favourites system powered by JavaScript and `localStorage`. We are creating an interactive web page for recipes covering cuisine around the world. The recipes database is being sorted by the continent of origin to help users to narrow down the search. The search bar function is also provided; users can type in keywords to search for the recipe they are looking for. Moreover, we created the save and unsave function so that the users can bookmark the recipes they like and revisit it later. In addition, we also provide the download function for the users if they prefer to download and save the recipes on they own devices.
+**It’s A Small World Recipe Explorer**
+CPAN113 Final Project
+Team Members: Lester Leonida • Rohit Kant Mishra • Keit Nam Thoon
 
 ---
 
-## Features
-- **Continent Filter** – Browse recipes by region  
-- **Search Bar** – Quickly find recipes by name  
-- **Dynamic Recipe List** – Displays recipes with country and continent  
-- **Recipe Details Panel** – Shows ingredients, steps, and metadata  
-- **Recipe Images** – Each recipe displays a corresponding image from the `/images` folder  
-- **Save to Favourites** – Stores favourite recipes using `localStorage`  
-- **Unsave Feature** – Remove recipes from favourites  
-- **Download Recipe** – Export recipe details as a `.txt` file  
-- **Expanded Recipe Dataset** – Includes new recipes added by team members  
-- **Improved UI Styling** – Enhanced readability and layout consistency  
-- **Background Music (Upcoming)** – Ambient music will be added to enhance user experience  
+**Project Overview**
+It’s A Small World Recipe is an interactive website designed as a global recipe database. The purpose of this project is to provide an online platform where food enthusiasts can explore recipes from different continents and cultures. Our team built this application to create a space where people who share a passion for cooking and international cuisine can interact, learn, and discover new dishes.
+The website includes several features that make recipe discovery simple and efficient:
+•	Continent based filtering
+•	Live search bar
+•	Clean recipe list layout
+•	Detailed recipe information (ingredients, steps, images)
+•	Saved recipes panel
+•	Download recipe option
+•	Background music with Play/Pause controls
+This project demonstrates front end development skills using HTML, CSS, and JavaScript, along with collaborative version control using GitHub.
 
 ---
 
-## Tech Stack
-- HTML5  
-- CSS3  
-- JavaScript (ES6)  
-- LocalStorage API  
-- GitHub Project Board & Branch Workflow  
+**Final Project Presentation Video**
+https://www.youtube.com/watch?v=utw4PhFamzQ
+Live Website
+https://lesterleonidasectione.github.io/CPAN113FinalProject/
+GitHub Repository
+https://github.com/Lesterleonidasectione/CPAN113FinalProject
 
 ---
 
-## Project Structure
-```
-CPAN113FinalProject/
-│
-├── index.html
-├── styles.css
-├── script.js
-├── data.js
-│
-├── images/
-│   └── <recipe images by ID>.jpg
-│
-├── assets/
-│   └── demo.mp4   ← Phase 2 feature demonstration video
-│
-└── README.md
-```
+**Features:**
+**Continent Filtering**
+Filter recipes by continent (Asia, Europe, Africa, etc.) to explore dishes from specific regions.
+**Live Search Bar**
+Search recipes instantly by typing keywords. Works together with continent filtering.
+**Recipe List**
+Displays recipe name, country, and continent. Clicking a recipe loads full details.
+**Recipe Details**
+Shows ingredients, steps, continent, country, type, and an image — all dynamically generated.
+**Saved Recipes**
+Save favourite recipes to a dedicated panel. Click saved recipes to reopen details.
+**Download Recipe**
+Download recipe information for offline use.
+**Background Music**
+Play/Pause background music to enhance user experience.
+**Clean UI Layout**
+Organized three column layout with responsive design and consistent styling.
+
+---
+**Screenshots**
+/assets/
+Screenshot 1 – Spaghetti Carbonara Details
+[Recipe details for Spaghetti Carbonara]
+Screenshot 2 – Chicken Adobo Details
+[Recipe details for Chicken Adobo ]
 
 ---
 
-## 🎥 Feature Demo
-A short video demonstrating the implemented features is included in the repository:
+**Video Presentation**
+/assets/
+Video 1- demo.mp4
+[a sample function of the website]
+Video 2- presentation.mp4
+[group presentation of this Project]
 
-**`assets/demo.mp4`**
-
-The demo showcases:
-- Filtering  
-- Searching  
-- Viewing recipe details  
-- Recipe images  
-- Saving & unsaving  
-- Downloading recipes  
-- Updated UI styling  
-- New recipes added by the team  
-
----
-
-## 🔧 Installation & Usage
-1. Clone the repository:
-   ```
-   git clone <your-repo-url>
-   ```
-2. Open the project folder.
-3. Launch `index.html` in any modern browser.
-4. Explore recipes, save favourites, and download them.
+How to Run the Project
+No installation required.
+1.	Clone the repository:
+Code
+git clone https://github.com/Lesterleonidasectione/CPAN113FinalProject
+2.	Open index.html in any modern browser.
+3.	Enjoy exploring recipes from around the world.
 
 ---
 
-## Team Members
-- Lester "Lesterleonidasectione"
-- Rohit "NarjotJewellers"
-- Keith "n01028447"  
+**Team Members & Contributions**
+Lester Leonida
+•	Implemented continent filtering
+•	Built search bar functionality
+•	Developed recipe details panel
+•	Added background music feature
+•	Wrote JavaScript logic for filtering, searching, rendering, and audio control
+•	Managed GitHub workflow and project structure
+Keit Nam Thoon
+•	Designed UI layout and styling
+•	Built saved recipes panel
+•	Implemented responsive design
+•	Worked on HTML/CSS structure
+Rohit Kant Mishra
+•	Structured recipe data
+•	Implemented recipe list rendering
+•	Wrote documentation and README.md
+•	Organized project files and data models
+
+**Feature Branches**
+•	feature/filtering
+•	feature/search
+•	feature-ui-layout
+•	feature-saved-recipes
+•	feature-background-music
 
 ---
 
-## Important Links
-- **Live Page:** https://lesterleonidasectione.github.io/CPAN113FinalProject/ 
-- **Repository:** https://github.com/Lesterleonidasectione/CPAN113FinalProject
-- **Phase 2 Merge Commit (SHA):** `50cd876`
+**Team Reflection**
+Our team collaborated effectively by dividing tasks based on strengths and maintaining communication throughout development. GitHub played a major role in keeping our work organized. We used feature branches, pull requests, and issues to manage our workflow and avoid conflicts.
+Challenges included merging different features together and ensuring consistent structure across the project. We learned the importance of communication, version control, and testing each other’s work. This project gave us hands on experience with real collaborative software development and strengthened our understanding of front end programming and GitHub workflows.
 
 ---
 
-## 📌 Project Status
-Phase 2 completed.  
-Next steps include:
-- Adding background music  
-- Interactive world map  
-- Dashboard analytics  
-- Additional recipes  
-- UI responsiveness improvements  
+**License**
+This project is for educational purposes as part of the CPAN113 course.
 
 ---
